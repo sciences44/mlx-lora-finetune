@@ -16,8 +16,8 @@
 
 set -euo pipefail
 
-MODEL="${MODEL:-mlx-community/Qwen3.5-0.8B-4bit-OptiQ}"
-DATA_DIR="${DATA_DIR:-./data}"
+"MODEL="${MODEL:-mlx-community/Qwen3.5-0.8B-OptiQ-4bit}"
+DATA_DIR="${DATA_DIR:-$(cd "$(dirname "$0")/.." && pwd)/data}"
 ADAPTER_DIR="${ADAPTER_DIR:-adapters}"
 ITERS="${ITERS:-600}"
 BATCH_SIZE="${BATCH_SIZE:-2}"
